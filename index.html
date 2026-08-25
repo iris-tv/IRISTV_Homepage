@@ -1,277 +1,317 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="세상을 보는 새로운 시선, 아이리스TV" />
-    <meta property="og:title" content="아이리스TV" />
-    <meta property="og:description" content="이익을 넘어 가치를, 경쟁을 넘어 선순환을 설계합니다." />
-    <meta property="og:type" content="website" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77MVC7DR1Q"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-77MVC7DR1Q');
-    </script>
-    <title>아이리스TV</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
-    <div class="topline">
-      <div class="shell topline__inner">
-        <p id="today"></p>
-        <p></p>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="세상을 보는 새로운 시선, 아이리스TV" />
+  <meta property="og:title" content="아이리스TV" />
+  <meta property="og:description" content="이익을 넘어 가치를, 경쟁을 넘어 선순환을 설계합니다." />
+  <meta property="og:type" content="website" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-77MVC7DR1Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-77MVC7DR1Q');
+  </script>
+  <title>아이리스TV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <div class="topline">
+    <div class="shell topline__inner">
+      <p id="today"></p>
+      <p></p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="shell header__inner">
+      <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="brand" href="#top" aria-label="아이리스TV 홈">
+        <span class="brand__logo"><img src="TV.webp" alt="" /></span>
+      </a>
+
     </div>
 
-    <header class="site-header">
-      <div class="shell header__inner">
-        <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="main-nav">
-          <span></span><span></span><span></span>
-        </button>
-        <a class="brand" href="#top" aria-label="아이리스TV 홈">
-          <span class="brand__logo"><img src="TV.webp" alt="" /></span>
-        </a>
-      
-      </div>
-   
-      <form class="search-panel shell" role="search" data-search-form>
-        <label for="site-search">기사 검색</label>
-        <input id="site-search" type="search" placeholder="검색어를 입력하세요" autocomplete="off" />
-        <button type="submit">검색</button>
-      </form>
-    </header>
+    <form class="search-panel shell" role="search" data-search-form>
+      <label for="site-search">기사 검색</label>
+      <input id="site-search" type="search" placeholder="검색어를 입력하세요" autocomplete="off" />
+      <button type="submit">검색</button>
+    </form>
+  </header>
 
-    <main id="main-content" class="board-main">
-      <section class="shell news-board" id="top" aria-labelledby="board-title">
-        <section class="board-section" aria-labelledby="notice-title">
-          <div class="board-section__heading">
-            <div>
-              <p class="eyebrow">NOTICE</p>
-              <h2 id="notice-title">중요 게시물</h2>
-            </div>
-            <span>필독</span>
+  <main id="main-content" class="board-main">
+    <section class="shell news-board" id="top" aria-labelledby="board-title">
+      <section class="board-section" aria-labelledby="notice-title">
+        <div class="board-section__heading">
+          <div>
+            <p class="eyebrow">NOTICE</p>
+            <h2 id="notice-title">중요 게시물</h2>
           </div>
-          <ul class="board-list board-list--notice">
-            <li>
-              <details>
-                <summary>[공지] 취재 및 제보 관련 공식 연락 창구 안내</summary>
-                <article data-attachments="">
-                  <p class="board-meta">공지 · 아이리스TV <time datetime="2026-07-28">2026.07.28</time></p>
-                  <p>안녕하십니까, 아이리스TV입니다.</p>
-                  <p>현재 당사의 업무 일정 및 운영 방침상, 모든 인터뷰 요청, 취재 문의, 각종 제보는 아래의 공식 이메일을 통해서만 접수받고 있습니다.</p>
-                  <p>취재진 및 관계자 여러분께서는 원활한 업무 처리를 위해 다음 공지 사항을 반드시 확인해 주시기 바랍니다.</p>
-                  <h3>공식 접수 창구 및 회신 안내</h3>
-                  <p>이메일: <a href="mailto:jebo@iristv.kr">jebo@iristv.kr</a></p>
-                  <p>모든 질의서 및 제보 내용은 상기 이메일로만 접수받습니다.</p>
-                  <p>접수된 내용 중 당사가 필요하다고 판단하는 경우에 한해 개별 회신을 드리며, 모든 접수 건에 대해 별도의 답변이나 확인을 드리지 않는 점 양해 바랍니다. (답변 요구 및 독촉 회신 불가)</p>
-                  <h3>기타 소통 수단 일절 불가</h3>
-                  <p>이메일 외의 모든 수단(대면 인터뷰, 전화, 메시지 등)을 통한 취재 요청 및 질의는 일절 수신하거나 응대하지 않습니다.</p>
-                  <h3>무단 방문 및 개별 접촉 시 법적 조치 안내</h3>
-                  <p>법인 등기부 및 홈페이지 등에 명시된 사업장 주소지 무단 방문, 또는 임직원의 성명·개인 연락처를 통한 개별 접촉 시도는 엄격히 금지됩니다.</p>
-                  <p>사전 협의 없는 주소지 방문이나 개인적 접촉 시도가 발생할 경우, 업무 방해 및 사생활 침해 등으로 간주하여 예고 없이 즉각적인 법적 조치를 취할 것임을 명확히 밝힙니다.</p>
-                  <p>감사합니다.</p>
-                </article>
-              </details>
-            </li>
-          </ul>
-        </section>
-
-        <section class="board-section" aria-labelledby="article-title">
-          <div class="board-section__heading">
-            <div>
-              <p class="eyebrow">LATEST ARTICLES</p>
-              <h2 id="article-title">일반 게시물</h2>
-            </div>
-
-          </div>
-          <ul class="board-list">
-
-                 <li>
-              <details>
-                <summary>수사의견서 접수</summary>
-                <article data-attachments="">
-                  <p class="board-meta">보도자료 / Iris / <time datetime="2026-08-19">2026.08.19</time></p>
-                  <p>[즉시 배포 가능]</p>
-                  <p>배포일자: 2026. 08. 19</p>
-                  <p>수정일자: 2026. 08. 19</p>
-                  <h3>[제목]</h3>
-                  <p>수사의견서 접수</p>
-                  <h3>[본문]</h3>
-                  <p>아이리스TV의 발행인 이종우는 서울수서경찰서 수사15팀에 배당된 사건번호 2026-008769에 대한 수사의견서를 2026년 8월 19일 서울수서경찰서에 접수하였습니다.</p>
-                </article>
-              </details>
-            </li>
-
-              <li>
-              <details>
-                <summary>수사의견서 및 탄원서 접수</summary>
-                <article data-attachments="">
-                  <p class="board-meta">보도자료 / Iris / <time datetime="2026-08-19">2026.08.19</time></p>
-                  <p>[즉시 배포 가능]</p>
-                  <p>배포일자: 2026. 08. 19</p>
-                  <h3>[제목]</h3>
-                  <p>수사의견서 및 탄원서 접수</p>
-                  <h3>[본문]</h3>
-                  <p>아이리스TV의 발행인 이종우는 서울수서경찰서 수사15팀에 배당된 사건번호 2026-008769에 대한 선처 탄원서 , 엄벌 탄원서, 수사의견서를 2026년 8월 15일 서울수서경찰서에 접수하였습니다.</p>
-                </article>
-              </details>
-            </li>
-
-
-              <li>
-              <details>
-                <summary>재판기록의열람등제한 신청서 접수</summary>
-                <article data-attachments="">
-                  <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
-                  <p>[즉시 배포 가능]</p>
-                  <p>배포일자: 2026. 08. 09</p>
-                  <p>수정일자: 2026. 08. 19</p>
-                  <h3>[제목]</h3>
-                  <p>재판기록의열람등제한 신청서 접수</p>
-                  <h3>[본문]</h3>
-                  <p>아이리스TV의 발행인 이종우는 2026년 8월 9일 서울중앙지방법원에 재판기록의열람등제한 신청서를 접수하였습니다. (원사건번호 : 2026가단62740)</p>
-                </article>
-              </details>
-            </li>
-  <li>
-              <details>
-                <summary>재판기록의열람등제한 신청서 접수</summary>
-                <article data-attachments="">
-                  <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
-                  <p>[즉시 배포 가능]</p>
-                  <p>배포일자: 2026. 08. 09</p>
-                  <p>수정일자: 2026. 08. 19</p>
-                  <h3>[제목]</h3>
-                  <p>재판기록의열람등제한 신청서 접수</p>
-                  <h3>[본문]</h3>
-                  <p>아이리스TV의 발행인 이종우는 2026년 8월 7일 서울중앙지방법원에 재판기록의열람등제한 신청서를 접수하였습니다. (원사건번호 : 2026가단62740)</p>
-                </article>
-              </details>
-            </li>
-
-  <li>
-              <details>
-                <summary>청구원인 변경신청서 제출</summary>
-                <article data-attachments="">
-                  <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
-                  <p>[즉시 배포 가능]</p>
-                  <p>배포일자: 2026. 08. 09</p>
-                  <p>수정일자: 2026. 08. 19</p>
-                  <h3>[제목]</h3>
-                  <p>청구원인 변경신청서 제출</p>
-                  <h3>[본문]</h3>
-                  <p>아이리스TV의 발행인 이종우는 2026년 8월 7일 서울중앙지방법원에 청구원인 변경신청서를 제출하였습니다. (사건번호 : 2026가단62740)</p>
-                </article>
-              </details>
-            </li>
-
-                <li>
-              <details>
-                <summary>소장 접수</summary>
-                <article data-attachments="">
-                  <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
-                  <p>[즉시 배포 가능]</p>
-                  <p>배포일자: 2026. 08. 09</p>
-                  <h3>[제목]</h3>
-                  <p>소장 접수</p>
-                  <h3>[본문]</h3>
-                  <p>아이리스TV의 발행인 이종우는 2026년 8월 7일 서울중앙지방법원에 소장을 접수하였습니다. (사건번호 : 2026가단62740, 소가 : 금 66,722,365원)</p>
-                </article>
-              </details>
-            </li>
-              <li>
-              <details>
-                <summary>고소보충서 및 수사의견서 발송</summary>
-                <article data-attachments="">
-                  <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
-                  <p>[즉시 배포 가능]</p>
-                  <p>배포일자: 2026. 08. 09</p>
-                  <h3>[제목]</h3>
-                  <p>고소보충서 및 수사의견서 발송</p>
-                  <h3>[본문]</h3>
-                  <p>아이리스TV의 발행인 이종우는 서울수서경찰서 수사15팀에 배당된 사건번호 2026-008769에 대한 고소보충서 및 수사의견서를 2026년 8월 7일 서울수서경찰서로 발송하였습니다.</p>
-                </article>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>검사처분</summary>
-                <article data-attachments="">
-                  <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
-                  <p>[즉시 배포 가능]</p>
-                  <p>배포일자: 2026. 08. 09</p>
-                  <p>수정일자: 2026. 08. 21</p>
-                  <h3>[제목]</h3>
-                  <p>검사처분</p>
-                  <h3>[본문]</h3>
-                  <p>2026년 7월 28일 서울중앙지방검찰청에 접수된 사건번호 2026형제47230은 2026년 8월 4일 검사처분(타관이송) 후 서울수서경찰서에 접수되었습니다.</p>
-                </article>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>고소보충서 접수</summary>
-                <article data-attachments="">
-                  <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
-                  <p>[즉시 배포 가능]</p>
-                  <p>배포일자: 2026. 08. 09</p>
-                  <p>수정일자: 2026. 08. 21</p>
-                  <h3>[제목]</h3>
-                  <p>고소보충서 접수</p>
-                  <h3>[본문]</h3>
-                  <p>아이리스TV의 발행인 이종우는 2026년 8월 3일에 서울중앙지방검찰청 형사제8부에 배당된 사건번호 2026형제47230에 대한 고소보충서를 접수하였습니다.</p>
-                </article>
-              </details>
-            </li>
-              <li>
-              <details>
-                <summary>고소장 접수</summary>
-                <article data-attachments="">
-                  <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.07.28</time></p>
-                  <p>[즉시 배포 가능]</p>
-                  <p>배포일자: 2026. 07. 28</p>
-                  <h3>[제목]</h3>
-                  <p>고소장 접수</p>
-                  <h3>[본문]</h3>
-                  <p>아이리스TV의 발행인 이종우는 2026년 7월 28일 13시 23분에 개인정보보호법 위반 등으로 인해 서울중앙지방검찰청에 고소장을 접수하였습니다.</p>
-                </article>
-              </details>
-            </li>
-          </ul>
-        </section>
-      </section>
-    </main>
-
-    <footer class="site-footer" id="opinion">
-      <div class="shell footer__top">
-        <a class="brand brand--footer" href="#top" aria-label="아이리스TV 홈"><span class="brand__logo"><img src="irislab_tv_transparent.webp" alt="" /></span></a>
-        <nav class="footer-links" aria-label="푸터 메뉴">
-          <a href="https://irislab.co.kr">회사소개</a>
-          <a href="terms.html">이용약관</a>
-          <a href="privacy.html">개인정보처리방침</a>
-          <a href="youth-protection.html">청소년보호정책</a>
-        </nav>
-      </div>
-      <div class="shell footer__bottom">
-        <div class="footer__details">
-          <p>주식회사 아이리스랩 · 제호: 아이리스TV (IRIS TV) · 등록번호 경남,아02750</p>
-          <p>발행인: 이종우 · 편집인: 이종우 · 청소년보호책임자: 이종우</p>
-          <p>발행소: 경상남도 양산시 하북면 지곡1길 8, 1동 406호 · 전화: 070-8970-6780</p>
-          <p>대표 이메일: jebo@iristv.kr · 사업자등록번호: 723-88-03656</p>
-          <p>호스팅 서비스 제공 : Github, Inc.</p>
+          <span>필독</span>
         </div>
-        <p>© <span id="year"></span> IRIS TV. All rights reserved.</p>
+        <ul class="board-list board-list--notice">
+          <li>
+            <details>
+              <summary>[공지] 취재 및 제보 관련 공식 연락 창구 안내</summary>
+              <article data-attachments="">
+                <p class="board-meta">공지 · 아이리스TV <time datetime="2026-07-28">2026.07.28</time></p>
+                <p>안녕하십니까, 아이리스TV입니다.</p>
+                <p>현재 당사의 업무 일정 및 운영 방침상, 모든 인터뷰 요청, 취재 문의, 각종 제보는 아래의 공식 이메일을 통해서만 접수받고 있습니다.</p>
+                <p>취재진 및 관계자 여러분께서는 원활한 업무 처리를 위해 다음 공지 사항을 반드시 확인해 주시기 바랍니다.</p>
+                <h3>공식 접수 창구 및 회신 안내</h3>
+                <p>이메일: <a href="mailto:jebo@iristv.kr">jebo@iristv.kr</a></p>
+                <p>모든 질의서 및 제보 내용은 상기 이메일로만 접수받습니다.</p>
+                <p>접수된 내용 중 당사가 필요하다고 판단하는 경우에 한해 개별 회신을 드리며, 모든 접수 건에 대해 별도의 답변이나 확인을 드리지 않는 점 양해 바랍니다. (답변 요구 및 독촉 회신
+                  불가)</p>
+                <h3>기타 소통 수단 일절 불가</h3>
+                <p>이메일 외의 모든 수단(대면 인터뷰, 전화, 메시지 등)을 통한 취재 요청 및 질의는 일절 수신하거나 응대하지 않습니다.</p>
+                <h3>무단 방문 및 개별 접촉 시 법적 조치 안내</h3>
+                <p>법인 등기부 및 홈페이지 등에 명시된 사업장 주소지 무단 방문, 또는 임직원의 성명·개인 연락처를 통한 개별 접촉 시도는 엄격히 금지됩니다.</p>
+                <p>사전 협의 없는 주소지 방문이나 개인적 접촉 시도가 발생할 경우, 업무 방해 및 사생활 침해 등으로 간주하여 예고 없이 즉각적인 법적 조치를 취할 것임을 명확히 밝힙니다.</p>
+                <p>감사합니다.</p>
+              </article>
+            </details>
+          </li>
+        </ul>
+      </section>
+
+      <section class="board-section" aria-labelledby="article-title">
+        <div class="board-section__heading">
+          <div>
+            <p class="eyebrow">LATEST ARTICLES</p>
+            <h2 id="article-title">일반 게시물</h2>
+          </div>
+
+        </div>
+        <ul class="board-list">
+
+          <li>
+            <details>
+              <summary>기타자료 접수</summary>
+              <article data-attachments="">
+                <p class="board-meta">보도자료 / Iris / <time datetime="2026-08-25">2026.08.25</time></p>
+                <p>[즉시 배포 가능]</p>
+                <p>배포일자: 2026. 08. 25</p>
+                <p>수정일자: 2026. 08. 25</p>
+                <h3>[제목]</h3>
+                <p>수사의견서 접수</p>
+                <h3>[본문]</h3>
+                <p>아이리스TV의 발행인 이종우는 서울수서경찰서 수사15팀에 배당된 사건번호 2026-008769에 대한 기타자료를 2026년 8월 21일 서울수서경찰서에 접수하였습니다.</p>
+              </article>
+            </details>
+          </li>
+
+            <li>
+            <details>
+              <summary>수사의견서 접수</summary>
+              <article data-attachments="">
+                <p class="board-meta">보도자료 / Iris / <time datetime="2026-08-25">2026.08.25</time></p>
+                <p>[즉시 배포 가능]</p>
+                <p>배포일자: 2026. 08. 25</p>
+                <p>수정일자: 2026. 08. 25</p>
+                <h3>[제목]</h3>
+                <p>수사의견서 접수</p>
+                <h3>[본문]</h3>
+                <p>아이리스TV의 발행인 이종우는 서울수서경찰서 수사15팀에 배당된 사건번호 2026-008769에 대한 수사의견서를 2026년 8월 20일 서울수서경찰서에 접수하였습니다.</p>
+              </article>
+            </details>
+          </li>
+
+
+          <li>
+            <details>
+              <summary>수사의견서 접수</summary>
+              <article data-attachments="">
+                <p class="board-meta">보도자료 / Iris / <time datetime="2026-08-19">2026.08.19</time></p>
+                <p>[즉시 배포 가능]</p>
+                <p>배포일자: 2026. 08. 19</p>
+                <p>수정일자: 2026. 08. 19</p>
+                <h3>[제목]</h3>
+                <p>수사의견서 접수</p>
+                <h3>[본문]</h3>
+                <p>아이리스TV의 발행인 이종우는 서울수서경찰서 수사15팀에 배당된 사건번호 2026-008769에 대한 수사의견서를 2026년 8월 19일 서울수서경찰서에 접수하였습니다.</p>
+              </article>
+            </details>
+          </li>
+
+          <li>
+            <details>
+              <summary>수사의견서 및 탄원서 접수</summary>
+              <article data-attachments="">
+                <p class="board-meta">보도자료 / Iris / <time datetime="2026-08-19">2026.08.19</time></p>
+                <p>[즉시 배포 가능]</p>
+                <p>배포일자: 2026. 08. 19</p>
+                <h3>[제목]</h3>
+                <p>수사의견서 및 탄원서 접수</p>
+                <h3>[본문]</h3>
+                <p>아이리스TV의 발행인 이종우는 서울수서경찰서 수사15팀에 배당된 사건번호 2026-008769에 대한 선처 탄원서 , 엄벌 탄원서, 수사의견서를 2026년 8월 15일
+                  서울수서경찰서에 접수하였습니다.</p>
+              </article>
+            </details>
+          </li>
+
+
+          <li>
+            <details>
+              <summary>재판기록의열람등제한 신청서 접수</summary>
+              <article data-attachments="">
+                <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
+                <p>[즉시 배포 가능]</p>
+                <p>배포일자: 2026. 08. 09</p>
+                <p>수정일자: 2026. 08. 19</p>
+                <h3>[제목]</h3>
+                <p>재판기록의열람등제한 신청서 접수</p>
+                <h3>[본문]</h3>
+                <p>아이리스TV의 발행인 이종우는 2026년 8월 9일 서울중앙지방법원에 재판기록의열람등제한 신청서를 접수하였습니다. (원사건번호 : 2026가단62740)</p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>재판기록의열람등제한 신청서 접수</summary>
+              <article data-attachments="">
+                <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
+                <p>[즉시 배포 가능]</p>
+                <p>배포일자: 2026. 08. 09</p>
+                <p>수정일자: 2026. 08. 19</p>
+                <h3>[제목]</h3>
+                <p>재판기록의열람등제한 신청서 접수</p>
+                <h3>[본문]</h3>
+                <p>아이리스TV의 발행인 이종우는 2026년 8월 7일 서울중앙지방법원에 재판기록의열람등제한 신청서를 접수하였습니다. (원사건번호 : 2026가단62740)</p>
+              </article>
+            </details>
+          </li>
+
+          <li>
+            <details>
+              <summary>청구원인 변경신청서 제출</summary>
+              <article data-attachments="">
+                <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
+                <p>[즉시 배포 가능]</p>
+                <p>배포일자: 2026. 08. 09</p>
+                <p>수정일자: 2026. 08. 19</p>
+                <h3>[제목]</h3>
+                <p>청구원인 변경신청서 제출</p>
+                <h3>[본문]</h3>
+                <p>아이리스TV의 발행인 이종우는 2026년 8월 7일 서울중앙지방법원에 청구원인 변경신청서를 제출하였습니다. (사건번호 : 2026가단62740)</p>
+              </article>
+            </details>
+          </li>
+
+          <li>
+            <details>
+              <summary>소장 접수</summary>
+              <article data-attachments="">
+                <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
+                <p>[즉시 배포 가능]</p>
+                <p>배포일자: 2026. 08. 09</p>
+                <h3>[제목]</h3>
+                <p>소장 접수</p>
+                <h3>[본문]</h3>
+                <p>아이리스TV의 발행인 이종우는 2026년 8월 7일 서울중앙지방법원에 소장을 접수하였습니다. (사건번호 : 2026가단62740, 소가 : 금 66,722,365원)</p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>고소보충서 및 수사의견서 발송</summary>
+              <article data-attachments="">
+                <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
+                <p>[즉시 배포 가능]</p>
+                <p>배포일자: 2026. 08. 09</p>
+                <h3>[제목]</h3>
+                <p>고소보충서 및 수사의견서 발송</p>
+                <h3>[본문]</h3>
+                <p>아이리스TV의 발행인 이종우는 서울수서경찰서 수사15팀에 배당된 사건번호 2026-008769에 대한 고소보충서 및 수사의견서를 2026년 8월 7일 서울수서경찰서로 발송하였습니다.
+                </p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>검사처분</summary>
+              <article data-attachments="">
+                <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
+                <p>[즉시 배포 가능]</p>
+                <p>배포일자: 2026. 08. 09</p>
+                <p>수정일자: 2026. 08. 21</p>
+                <h3>[제목]</h3>
+                <p>검사처분</p>
+                <h3>[본문]</h3>
+                <p>2026년 7월 28일 서울중앙지방검찰청에 접수된 사건번호 2026형제47230은 2026년 8월 4일 검사처분(타관이송) 후 서울수서경찰서에 접수되었습니다.</p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>고소보충서 접수</summary>
+              <article data-attachments="">
+                <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.08.09</time></p>
+                <p>[즉시 배포 가능]</p>
+                <p>배포일자: 2026. 08. 09</p>
+                <p>수정일자: 2026. 08. 21</p>
+                <h3>[제목]</h3>
+                <p>고소보충서 접수</p>
+                <h3>[본문]</h3>
+                <p>아이리스TV의 발행인 이종우는 2026년 8월 3일에 서울중앙지방검찰청 형사제8부에 배당된 사건번호 2026형제47230에 대한 고소보충서를 접수하였습니다.</p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>고소장 접수</summary>
+              <article data-attachments="">
+                <p class="board-meta">보도자료 / Iris / <time datetime="2026-07-28">2026.07.28</time></p>
+                <p>[즉시 배포 가능]</p>
+                <p>배포일자: 2026. 07. 28</p>
+                <h3>[제목]</h3>
+                <p>고소장 접수</p>
+                <h3>[본문]</h3>
+                <p>아이리스TV의 발행인 이종우는 2026년 7월 28일 13시 23분에 개인정보보호법 위반 등으로 인해 서울중앙지방검찰청에 고소장을 접수하였습니다.</p>
+              </article>
+            </details>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="opinion">
+    <div class="shell footer__top">
+      <a class="brand brand--footer" href="#top" aria-label="아이리스TV 홈"><span class="brand__logo"><img
+            src="irislab_tv_transparent.webp" alt="" /></span></a>
+      <nav class="footer-links" aria-label="푸터 메뉴">
+        <a href="https://irislab.co.kr">회사소개</a>
+        <a href="terms.html">이용약관</a>
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="youth-protection.html">청소년보호정책</a>
+      </nav>
+    </div>
+    <div class="shell footer__bottom">
+      <div class="footer__details">
+        <p>주식회사 아이리스랩 · 제호: 아이리스TV (IRIS TV) · 등록번호 경남,아02750</p>
+        <p>발행인: 이종우 · 편집인: 이종우 · 청소년보호책임자: 이종우</p>
+        <p>발행소: 경상남도 양산시 하북면 지곡1길 8, 1동 406호 · 전화: 070-8970-6780</p>
+        <p>대표 이메일: jebo@iristv.kr · 사업자등록번호: 723-88-03656</p>
+        <p>호스팅 서비스 제공 : Github, Inc.</p>
       </div>
-    </footer>
-    <script src="app.js"></script>
-  </body>
+      <p>© <span id="year"></span> IRIS TV. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
 </html>
